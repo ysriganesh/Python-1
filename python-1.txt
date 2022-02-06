@@ -1,0 +1,797 @@
+Sbi=[]
+Hdfc=[]
+Axis=[]
+Boi=[]
+all=[]
+all.append(Sbi)
+all.append(Hdfc)
+all.append(Axis)
+all.append(Boi)
+print("-------------------------------------Welcome to 4-1 Banks option from Ganni Website--------------------------------------------------------")
+while True:
+  print()
+  print("1.Create Account , 2.Pinchange , 3. Deposite , 4.Withdrawal , 5.MiniStatement , 6.Balance , 7.Loan Deatils , 8.Delete Account , 9.Incharge-option")
+  print()
+  print()
+  ch=int(input("Please! Enter Your Choice:"))
+  if ch == 1:
+    print("---------Your are in Account Creation Section---------")
+    while True:
+      print("1.SBI Bank , 2.HDFC Bank , 3.Axis Bank , 4.Bank of India , 5.None")
+      print()
+      ch=int(input("Enter Your Bank Choice:"))
+      print()
+      if ch == 1:
+        print("Thanks for Selecting STATE BANK OF INDIA..........Welcome........")
+        print("Please Provide the Details:")
+        X="SBI BANK"
+        Name=input("Please enter your name:")
+        Pno=int(input("Please enter your phone number:"))
+        opt=int(input("Enter the opt which is sent for number +91**********"))
+        pan=int(input("Enter Pan Card Number:"))
+        Amount=int(input("Enter the Amount to Deposite:"))
+        pin=int(input("Enter your pin number of your choice:"))
+        print("!!!!!!!!!!!Your Account is been Created Thanks for using SBI Belief of Millions of Customers!!!!!!!!")
+        a=[Name,Pno,pan,Amount,pin,X]
+        Sbi.append(a)
+
+      elif ch == 2:
+        print("Thanks for Selecting HDFC BANK ..........Welcome........")
+        print()
+        print("Please Provide the Details:")
+        Y="HDFC BANK"
+        print()
+        Name=input("Please enter your name:")
+        Pno=int(input("Please enter your phone number:"))
+        opt=int(input("Enter the opt which is sent for number +91**********"))
+        pan=int(input("Enter Pan Card Number:"))
+        Amount=int(input("Enter the Amount to Deposite:"))
+        pin=int(input("Enter your pin number of your choice:"))
+        print("!!!!!!!!!!!Your Account is been Created Thanks for using HDFC WON Heart of Millions of the Customers!!!!!!!!")
+        print()
+        b=[Name,Pno,pan,Amount,pin,Y]
+        Hdfc.append(b)
+
+      elif ch == 3:
+        print("Thanks for Selecting AXIS Bank..........Welcome........")
+        print()
+        print("Please Provide the Details:")
+        Z="AXIS BANK"
+        print()
+        Name=input("Please enter your name:")
+        Pno=int(input("Please enter your phone number:"))
+        opt=int(input("Enter the opt which is sent for number +91**********"))
+        pan=int(input("Enter Pan Card Number:"))
+        Amount=int(input("Enter the Amount to Deposite:"))
+        pin=int(input("Enter your pin number of your choice:"))
+        print()
+        print("!!!!!!!!!!!Your Account is been Created Thanks for using AXIS Belief Has Won BEST Bank of the year!!!!!!!!")
+        c=[Name,Pno,pan,Amount,pin,Z]
+        Axis.append(c)
+      elif ch == 4:
+        print("Thanks for Selecting BOI Bank..........Welcome........")
+        print()
+        print("Please Provide the Details:")
+        A="BOI BANKS"
+        print()
+        Name=input("Please enter your name:")
+        Pno=int(input("Please enter your phone number:"))
+        opt=int(input("Enter the opt which is sent for number +91**********"))
+        pan=int(input("Enter Pan Card Number:"))
+        Amount=int(input("Enter the Amount to Deposite:"))
+        pin=int(input("Enter your pin number of your choice:"))
+        print()
+        print("!!!!!!!!!!!Your Account is been Created Thanks for using BoI Belief Has Strogest security accross various situaton!!!!!!!!")
+        d=[Name,Pno,pan,Amount,pin,A]
+        Boi.append(d)
+      else:
+        print("Please Enter the Banks of the above mentioned Only........")
+        break
+  elif ch == 2:
+    print("Your are Now in Pin Change option")
+    while True:
+      print("1.SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.None")
+      ch=int(input("Enter Your Choice:"))
+      if ch == 1:
+        print("Your are in the SBI PIN Change Option")
+        print()
+        Num=int(input("Enter Your Number Acciated with Bank:"))
+        OPin=int(input("Enter Your Old Pin:"))
+        for a in Sbi:
+          if a[1] != Num and a[4] !=OPin:
+            print("Invalid")
+            break
+          else:
+              print("Fetching details......")
+        for a in Sbi:
+          if a[1] == Num and a[4] == OPin:
+            npin=int(input("Enter New PIN:"))
+            a[4]=npin
+            print("The Pin is Updated")
+      elif ch == 2:
+        print("Your are in the HDFC PIN Change Option")
+        print()
+        Num=int(input("Enter Your Number Acciated with Bank:"))
+        OPin=int(input("Enter Your Old Pin:"))
+        for a in Hdfc:
+          if a[1] != Num and a[4] !=OPin:
+            print("Invalid")
+            break
+          else:
+              print("Fetching details......")
+        for a in Hdfc:
+          if a[1] == Num and a[4] == OPin:
+            npin=int(input("Enter New PIN:"))
+            a[4]=npin
+            print("The Pin is Updated")
+      elif ch == 3:
+        print("Your are in the AXIS PIN Change Option")
+        print()
+        Num=int(input("Enter Your Number Acciated with Bank:"))
+        OPin=int(input("Enter Your Old Pin:"))
+        for a in Axis:
+          if a[1] != Num and a[4] !=OPin:
+            print("Invalid")
+            break
+          else:
+              print("Fetching details......")
+        for a in Axis:
+          if a[1] == Num and a[4] == OPin:
+            npin=int(input("Enter New PIN:"))
+            a[4]=npin
+            print("The Pin is Updated")
+      elif ch == 4:
+        print("Your are in the BoI PIN Change Option")
+        print()
+        Num=int(input("Enter Your Number Acciated with Bank:"))
+        OPin=int(input("Enter Your Old Pin:"))
+        for a in Boi:
+          if a[1] != Num and a[4] !=OPin:
+            print("Invalid")
+            break
+          else:
+              print("Fetching details......")
+        for a in Boi:
+          if a[1] == Num and a[4] == OPin:
+            npin=int(input("Enter New PIN:"))
+            a[4]=npin
+            print("The Pin is Updated")
+
+  elif ch == 3:
+    print(">>>>>>>>>>>>>>>>>>> DEPOSITE SECTION <<<<<<<<<<<<<<<<<<<<<<<<")
+    print()
+    while True:
+      print("1. SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.None")
+      print()
+      ch=int(input("Enter the Bank:"))
+      if ch == 1:
+        print("You are Now in the SBI Deposite Option")
+        Num=int(input("Enter the Number:"))
+        pin=int(input("Enter the pin"))
+        for a in Sbi:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Sbi:
+          if a[1] == Num and a[4] == pin:
+            print("Your Balance:",a[3])
+            x=a[3]
+            Amount=int(input("Enter The New Amount:"))
+            y=x+Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 2:
+        print("You are Now in the HDF Deposite Option")
+        Num=int(input("Enter the Number:"))
+        pin=int(input("Enter the pin"))
+        for a in Hdfc:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Hdfc:
+          if a[1] == Num and a[4] == pin:
+            print("Your Balance:",a[3])
+            x=a[3]
+            Amount=int(input("Enter The New Amount:"))
+            y=x+Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 3:
+        print("You are Now in the AXIS Deposite Option")
+        Num=int(input("Enter the Number:"))
+        pin=int(input("Enter the pin"))
+        for a in Axis:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Axis:
+          if a[1] == Num and a[4] == pin:
+            print("Your Balance:",a[3])
+            x=a[3]
+            Amount=int(input("Enter The New Amount:"))
+            y=x+Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 4:
+        print("You are Now in the BOI Deposite Option")
+        Num=int(input("Enter the Number:"))
+        pin=int(input("Enter the pin"))
+        for a in Boi:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Boi:
+          if a[1] == Num and a[4] == pin:
+            print("Your Balance:",a[3])
+            x=a[3]
+            Amount=int(input("Enter The New Amount:"))
+            y=x+Amount
+            a[3]=y
+            print("Balance Updated")
+      else:
+        print("InValid Choice")
+        break
+  elif ch == 4:
+    print("************** WITHDRAWAL OPTION *************")
+    while True:
+      print("1. SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.EXIT")
+      ch=int(input("Enter Your Bank:"))
+      if ch == 1:
+        print("You are now Withdrawal Option is SBI Bank")
+        Num=int(input("Enter the Number Assoicated with Bank:"))
+        pin=int(input("Enter the Pin Number:"))
+        for a in Sbi:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Sbi:
+          if a[1] == Num and a[4] == pin:
+            x=a[3]
+            Amount=int(input("Enter the amount to be withdrawal:"))
+            y=a[3]-Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 2:
+        print("You are now Withdrawal Option is HDFC Bank")
+        Num=int(input("Enter the Number Assoicated with Bank:"))
+        pin=int(input("Enter the Pin Number:"))
+        for a in Hdfc:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Hdfc:
+          if a[1] == Num and a[4] == pin:
+            x=a[3]
+            Amount=int(input("Enter the amount to be withdrawal:"))
+            y=a[3]-Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 3:
+        print("You are now Withdrawal Option is Axis Bank")
+        Num=int(input("Enter the Number Assoicated with Bank:"))
+        pin=int(input("Enter the Pin Number:"))
+        for a in Axis:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Axis:
+          if a[1] == Num and a[4] == pin:
+            x=a[3]
+            Amount=int(input("Enter the amount to be withdrawal:"))
+            y=a[3]-Amount
+            a[3]=y
+            print("Balance Updated")
+      elif ch == 4:
+        print("You are now Withdrawal Option is BoI Bank")
+        Num=int(input("Enter the Number Assoicated with Bank:"))
+        pin=int(input("Enter the Pin Number:"))
+        for a in Boi:
+          if a[1] != Num and a[4] != pin:
+            print("Invaild")
+            break
+          else:
+            print("Fetching Details......")
+        for a in Boi:
+          if a[1] == Num and a[4] == pin:
+            x=a[3]
+            Amount=int(input("Enter the amount to be withdrawal:"))
+            y=a[3]-Amount
+            a[3]=y
+            print("Balance Updated")
+      else:
+        print("Invalid Bank Please Check the bank entered")
+
+        
+  elif ch == 5:
+    print("Are You Not sure about your account details the check out the Ministatement")
+    print("``````````````````````````````MINI-STATEMENT````````````````````````````````````````")
+    while True:
+      print("1.SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.Exit")
+      ch=int(input("Enter the Bank Name:"))
+      if ch == 1:
+        print("..........................SBI MINI-Statement.................................")
+        Num=int(input("Enter Number Asscoiated with Bank:"))
+        for a in Sbi:
+          if a[1] != Num:
+            break
+          else:
+            print("Fetching the deatils....")
+        
+        for a in Sbi:
+          if a[1] == Num:
+            print("Name\t\tNumber\t\tPancardNo\t\tBalance\t\tBank")
+            for x in Sbi:
+              for y in x:
+                if y==x[4]:
+                  continue
+                print(y,end="\t\t")
+            print()
+      elif ch == 2:
+        print("..........................HDFC MINI-Statement.................................")
+        Num=int(input("Enter Number Asscoiated with Bank:"))
+        for a in Hdfc:
+          if a[1] != Num:
+            break
+          else:
+            print("Fetching the deatils....")
+        
+        for a in Hdfc:
+          if a[1] == Num:
+            print("Name\t\tNumber\t\tPancardNo\t\tBalance\t\tBank")
+            for x in Sbi:
+              for y in x:
+                if y==x[4]:
+                  continue
+                print(y,end="\t\t")
+            print()
+      elif ch == 3:
+        print("..........................AXIS MINI-Statement.................................")
+        Num=int(input("Enter Number Asscoiated with Bank:"))
+        for a in Axis:
+          if a[1] != Num:
+            break
+          else:
+            print("Fetching the deatils....")
+        
+        for a in Axis:
+          if a[1] == Num:
+            print("Name\t\tNumber\t\tPancardNo\t\tBalance\t\tBank")
+            for x in Sbi:
+              for y in x:
+                if y==x[4]:
+                  continue
+                print(y,end="\t\t")
+            print()
+      elif ch == 4:
+        print("..........................BOI MINI-Statement.................................")
+        Num=int(input("Enter Number Asscoiated with Bank:"))
+        for a in Boi:
+          if a[1] != Num:
+            break
+          else:
+            print("Fetching the deatils....")
+        
+        for a in Boi:
+          if a[1] == Num:
+            print("Name\t\tNumber\t\tPancardNo\t\tBalance\t\tBank")
+            for x in Sbi:
+              for y in x:
+                if y==x[4]:
+                  continue
+                print(y,end="\t\t")
+            print()
+      else:
+        Print("Please Enter Valid Bank details")
+  
+  elif ch == 6:
+    print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Not sure about your balance Check out your Bank Balance:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+    while True:
+      print("1.SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.EXIT")
+      ch = int(input("Enter the Bank:"))
+      if ch == 1:
+        print("Balance Check Option SBI : )")
+        Num=int(input("Enter Your Number:"))
+        pin=int(input("Enter your PIN:"))
+        
+        for a in Sbi:
+          if a[1] !=Num and a[4] != pin:
+            break
+        for a in Sbi:
+          if a[1] == Num and a[4] == pin:
+            print("Your Bank Balance is:",a[3])
+            print("$$$$$ Thanks $$$$$")
+      elif ch == 2:
+        print("Balance Check Option HDFC : )")
+        Num=int(input("Enter Your Number:"))
+        pin=int(input("Enter your PIN:"))
+        
+        for a in Hdfc:
+          if a[1] !=Num and a[4] != pin:
+            break
+        for a in Hdfc:
+          if a[1] == Num and a[4] == pin:
+            print("Your Bank Balance is:",a[3])
+            print("$$$$$ Thanks $$$$$")
+      elif ch == 3:
+        print("Balance Check Option AXIS : )")
+        Num=int(input("Enter Your Number:"))
+        pin=int(input("Enter your PIN:"))
+        
+        for a in Axis:
+          if a[1] !=Num and a[4] != pin:
+            break
+        for a in Axis:
+          if a[1] == Num and a[4] == pin:
+            print("Your Bank Balance is:",a[3])
+            print("$$$$$ Thanks $$$$$")
+      elif ch == 4:
+        print("Balance Check Option BOI : )")
+        Num=int(input("Enter Your Number:"))
+        pin=int(input("Enter your PIN:"))
+        
+        for a in Boi:
+          if a[1] !=Num and a[4] != pin:
+            break
+        for a in Boi:
+          if a[1] == Num and a[4] == pin:
+            print("Your Bank Balance is:",a[3])
+            print("$$$$$ Thanks $$$$$")
+      else:
+        break
+  elif ch == 7:
+    print("--------------------------------------Wants some money for your purpose check out some bank loans-------------------------------")
+    while True:
+      print("1. SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.EXIT")
+      ch = int(input("Enter the Bank:"))
+      if ch == 1:
+        print("Welcome to SBI bank loan Option")
+        while True:
+          print("1.GOLD LOAN , 2.EDUCATION LOAN , 3.EXIT")
+          ch = int(input("Your Choice is Our Choice:"))
+          if ch == 1:
+            print("Please make sure that Gold is verified if not do that immediately")
+            x=input()#done / no
+            if x=="done" or "Done":
+              Name=input("Enter Name:")
+              print("Your are Now in Gold Loan Option")
+              Goldgrames = int(input("Enter Gold in Grames"))
+              print("4,213/- gram is the amount today.....hurry!!!!")
+              total=Goldgrames*4213
+              print("Total amount Granted")
+              Months=int(input("Please enter how many months do you requried to pay back:"))
+              if Months <3:
+                i=1500
+                print("Your Interset per Month is",i)
+                a=total+i
+                print("Grandtotal",a)
+              elif  3 > Months < 10:
+                i=1570
+                print("Your Interset per Month is:",i)
+                n=total+i
+                print("Grandtotal",n)
+              elif Months > 12:
+                i=1600
+                print("Your Interset per Month is:",i)
+                d=total+i
+                print("Grandtotal",d)
+            Surity=input("Enter your surity papers:")
+            print("your Gold loan process is completed our agent will conatct you within 3 working days")
+            print("..........................MINI STATEMENT......................")
+            print("Name of Loan Applier",Name)
+            print("Gold in Grames",Goldgrames)
+            print("Amount per Gold 4,231")
+            print("Total Amount",total)
+            print("Interset rate:",i)
+            print("Status pending............")
+          elif ch == 2:
+            print("You are in Education loan option")
+            FName=input("Enter Father Name:")
+            FOcc=input("Enter Occupation:")
+            FSalary=int(input("Enter Salary per Annum:"))
+            SName=input("Enter Student Name")
+            Scoll=input("Enter College Name:")
+            if FSalary > 600000:
+              print("Your are not allowed for loan")
+            else:
+              Amount=int(input("Enter Amount"))
+              Time=24
+              Amount_per_month=Amount/24
+              print("Amount per month",Amount_per_month)
+            print("Please upload all relatd Documents our Agent will contact with you within 2 working days")
+            print("Thanks")
+            print("...........Recipt...........")
+            print("Father Name",FName)
+            print("Father Occupation",FOcc)
+            print("Father Salary",FSalary)
+            print("Student NAme",SName)
+            print("Student College",Scoll)
+            print("Loan Amount",Amount)
+            print("Per Month ",Amount_per_month)
+            print("Status pending......")
+          else:
+            break
+      elif ch == 2:
+        print("Welcome to HDFC bank loan Option")
+        while True:
+          print("1.GOLD LOAN , 2.EDUCATION LOAN , 3.EXIT")
+          ch = int(input("Your Choice is Our Choice:"))
+          if ch == 1:
+            print("Please make sure that Gold is verified if not do that immediately")
+            x=input()#done / no
+            if x=="done" or "Done":
+              Name=input("Enter Name:")
+              print("Your are Now in Gold Loan Option")
+              Goldgrames = int(input("Enter Gold in Grames"))
+              print("3,440/- gram is the amount today.....hurry!!!!")
+              total=Goldgrames*4213
+              print("Total amount Granted")
+              Months=int(input("Please enter how many months do you requried to pay back:"))
+              if Months <4:
+                i=1200
+                print("Your Interset per Month is",i)
+                a=total+i
+                print("Grandtotal",a)
+              elif  5 > Months < 10:
+                i=1700
+                print("Your Interset per Month is:",i)
+                n=total+i
+                print("Grandtotal",n)
+              elif Months > 12:
+                i=2600
+                print("Your Interset per Month is:",i)
+                d=total+i
+                print("Grandtotal",d)
+            Surity=input("Enter your surity papers:")
+            print("your Gold loan process is completed our agent will conatct you within 3 working days")
+            print("..........................MINI STATEMENT......................")
+            print("Name of Loan Applier",Name)
+            print("Gold in Grames",Goldgrames)
+            print("Amount per Gold 4,231")
+            print("Total Amount",total)
+            print("Interset rate:",i)
+            print("Status pending............")
+          elif ch == 2:
+            print("You are in Education loan option")
+            FName=input("Enter Father Name:")
+            FOcc=input("Enter Occupation:")
+            FSalary=int(input("Enter Salary per Annum:"))
+            SName=input("Enter Student Name")
+            Scoll=input("Enter College Name:")
+            if FSalary > 550000:
+              print("Your are not allowed for loan")
+            else:
+              Amount=int(input("Enter Amount"))
+              Time=24
+              Amount_per_month=Amount/24
+              print("Amount per month",Amount_per_month)
+            print("Please upload all relatd Documents our Agent will contact with you within 2 working days")
+            print("Thanks")
+            print("...........Recipt...........")
+            print("Father Name",FName)
+            print("Father Occupation",FOcc)
+            print("Father Salary",FSalary)
+            print("Student NAme",SName)
+            print("Student College",Scoll)
+            print("Loan Amount",Amount)
+            print("Per Month ",Amount_per_month)
+            print("Status pending......")
+          else:
+            break
+      elif ch == 3:
+        print("Welcome to AXIS bank loan Option")
+        while True:
+          print("1.GOLD LOAN , 2.EDUCATION LOAN , 3.EXIT")
+          ch = int(input("Your Choice is Our Choice:"))
+          if ch == 1:
+            print("Please make sure that Gold is verified if not do that immediately")
+            x=input()#done / no
+            if x=="done" or "Done":
+              Name=input("Enter Name:")
+              print("Your are Now in Gold Loan Option")
+              Goldgrames = int(input("Enter Gold in Grames"))
+              print("4,213/- gram is the amount today.....hurry!!!!")
+              total=Goldgrames*4213
+              print("Total amount Granted")
+              Months=int(input("Please enter how many months do you requried to pay back:"))
+              if Months <3:
+                i=1500
+                print("Your Interset per Month is",i)
+                a=total+i
+                print("Grandtotal",a)
+              elif  3 > Months < 10:
+                i=1570
+                print("Your Interset per Month is:",i)
+                n=total+i
+                print("Grandtotal",n)
+              elif Months > 12:
+                i=1600
+                print("Your Interset per Month is:",i)
+                d=total+i
+                print("Grandtotal",d)
+            Surity=input("Enter your surity papers:")
+            print("your Gold loan process is completed our agent will conatct you within 3 working days")
+            print("..........................MINI STATEMENT......................")
+            print("Name of Loan Applier",Name)
+            print("Gold in Grames",Goldgrames)
+            print("Amount per Gold 4,231")
+            print("Total Amount",total)
+            print("Interset rate:",i)
+            print("Status pending............")
+          elif ch == 2:
+            print("You are in Education loan option")
+            FName=input("Enter Father Name:")
+            FOcc=input("Enter Occupation:")
+            FSalary=int(input("Enter Salary per Annum:"))
+            SName=input("Enter Student Name")
+            Scoll=input("Enter College Name:")
+            if FSalary > 600000:
+              print("Your are not allowed for loan")
+            else:
+              Amount=int(input("Enter Amount"))
+              Time=24
+              Amount_per_month=Amount/24
+              print("Amount per month",Amount_per_month)
+            print("Please upload all relatd Documents our Agent will contact with you within 2 working days")
+            print("Thanks")
+            print("...........Recipt...........")
+            print("Father Name",FName)
+            print("Father Occupation",FOcc)
+            print("Father Salary",FSalary)
+            print("Student NAme",SName)
+            print("Student College",Scoll)
+            print("Loan Amount",Amount)
+            print("Per Month ",Amount_per_month)
+            print("Status pending......")
+          else:
+            break
+      elif ch == 4:
+        print("Welcome to BOI bank loan Option")
+        while True:
+          print("1.GOLD LOAN , 2.EDUCATION LOAN , 3.EXIT")
+          ch = int(input("Your Choice is Our Choice:"))
+          if ch == 1:
+            print("Please make sure that Gold is verified if not do that immediately")
+            x=input()#done / no
+            if x=="done" or "Done":
+              Name=input("Enter Name:")
+              print("Your are Now in Gold Loan Option")
+              Goldgrames = int(input("Enter Gold in Grames"))
+              print("4,213/- gram is the amount today.....hurry!!!!")
+              total=Goldgrames*4213
+              print("Total amount Granted")
+              Months=int(input("Please enter how many months do you requried to pay back:"))
+              if Months <3:
+                i=1500
+                print("Your Interset per Month is",i)
+                a=total+i
+                print("Grandtotal",a)
+              elif  3 > Months < 10:
+                i=1570
+                print("Your Interset per Month is:",i)
+                n=total+i
+                print("Grandtotal",n)
+              elif Months > 12:
+                i=1600
+                print("Your Interset per Month is:",i)
+                d=total+i
+                print("Grandtotal",d)
+            Surity=input("Enter your surity papers:")
+            print("your Gold loan process is completed our agent will conatct you within 3 working days")
+            print("..........................MINI STATEMENT......................")
+            print("Name of Loan Applier",Name)
+            print("Gold in Grames",Goldgrames)
+            print("Amount per Gold 4,231")
+            print("Total Amount",total)
+            print("Interset rate:",i)
+            print("Status pending............")
+          elif ch == 2:
+            print("You are in Education loan option")
+            FName=input("Enter Father Name:")
+            FOcc=input("Enter Occupation:")
+            FSalary=int(input("Enter Salary per Annum:"))
+            SName=input("Enter Student Name")
+            Scoll=input("Enter College Name:")
+            if FSalary > 600000:
+              print("Your are not allowed for loan")
+            else:
+              Amount=int(input("Enter Amount"))
+              Time=24
+              Amount_per_month=Amount/24
+              print("Amount per month",Amount_per_month)
+            print("Please upload all relatd Documents our Agent will contact with you within 2 working days")
+            print("Thanks")
+            print("...........Recipt...........")
+            print("Father Name",FName)
+            print("Father Occupation",FOcc)
+            print("Father Salary",FSalary)
+            print("Student NAme",SName)
+            print("Student College",Scoll)
+            print("Loan Amount",Amount)
+            print("Per Month ",Amount_per_month)
+            print("Status pending......")
+          else:
+            break
+      else:
+        break
+  elif ch == 8:
+    print("YOU are in deletion section.....")
+    while True:
+      print("1. SBI , 2.HDFC , 3.AXIS , 4.BOI , 5.Exit")
+      ch = int(input("Enter Choice:"))
+      if ch == 1:
+        print("SBI Delection section")
+        Num=int(input("Enter Number"))
+        for a in Sbi:
+          if a[1] != Num:
+            break
+          else:
+            print("Fecthing details.......")
+        for a in Sbi:
+          if a[1] == Num:
+            Sbi.remove(a)
+            print("The Account is deleted....... :( ")
+      elif ch == 2:
+        print("HDFC Delection section")
+        Num=int(input("Enter Number"))
+        for a in Hdfc:
+          if a[1] != Num:
+            break
+          else:
+            print("Fecthing details.......")
+        for a in Hdfc:
+          if a[1] == Num:
+            Hdfc.remove(a)
+            print("The Account is deleted....... :( ")
+      elif ch == 3:
+        print("AXIS Delection section")
+        Num=int(input("Enter Number"))
+        for a in Axis:
+          if a[1] != Num:
+            break
+          else:
+            print("Fecthing details.......")
+        for a in Axis:
+          if a[1] == Num:
+            Axis.remove(a)
+            print("The Account is deleted....... :( ")
+      elif ch == 4:
+        print("BOI Delection section")
+        Num=int(input("Enter Number"))
+        for a in Boi:
+          if a[1] != Num:
+            break
+          else:
+            print("Fecthing details.......")
+        for a in Boi:
+          if a[1] == Num:
+            Boi.remove(a)
+            print("The Account is deleted....... :( ")
+        else:
+          break
+
+  elif ch == 9:
+    print(".........ACCOUNT HOLDERS DETAILS.......")
+    print("Name\t\tNumber\t\tPanCardNo\t\tAmount\t\tPinNumber\t\tBank")
+    for x in all:
+      for y in x:
+        for z in y:
+          print(z,end="\t\t")
+        print()
+  else:
+    break
+print("--------------------------------------------------------Thanks for Using our website--------------------------------------Visit Again")
+
